@@ -3,7 +3,7 @@ import { optionalAsync } from './Utils';
 import { CommentItem } from './CommentItem';
 
 export class RestApi {
-    private url = "http://localhost:8000/";
+    private url = "http://localhost:8000/api/";
 
     async query(type: string, path: string, data: any = null): Promise<any> {
         const result: Response = await fetch(this.url + path, {
